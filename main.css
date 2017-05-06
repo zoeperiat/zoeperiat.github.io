@@ -1,1 +1,27 @@
-h1 {color: #0A6379}
+
+a {
+  font-family: "Courier New", Courier, monospace
+}
+#header {
+  background-image: url("http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg");
+  color: #FEFEFE;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px
+}
+
+#background-image {
+  postion: relative;
+}
+
+#background-image-after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
