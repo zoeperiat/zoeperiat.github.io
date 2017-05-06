@@ -10,18 +10,26 @@ a {
   padding-left: 15px
 }
 
-#background-image {
+.background-image {
   postion: relative;
+  overflow: hidden;
 }
-
-#background-image-after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url("http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg";
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.background-image:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 93px;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
